@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hi-Low Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <main>
+        <div class="game-screen">
+          <div class="screen splash" id="splash">
+            <div class="png-container">
+              <figure>
+                <img
+                  class="pirate"
+                  width="150px"
+                  height="150px"
+                  src="images/pirate.png"
+                  alt=""
+                />
+              </figure>
+
+              <figure style="display: none">
+                <img
+                  class="treasure"
+                  width="150px"
+                  height="150px"
+                  src="images/treasure.png"
+                  alt=""
+                />
+              </figure>
+            </div>
+            <div class="game-instruction">
+              <h1 class="title">Hi-Low</h1>
+
+              <div class="game-info">
+                <h2 class="sub-title">Game Story</h2>
+
+                <p>
+                  Once upon a time, in a magical land, there was a deserted
+                  island filled with a secret treasure. To find the treasure,
+                  you need to play a game and guess the secret number. Don't
+                  worry, it's a game for beginners! When you make a guess, the
+                  pirate will tell you if your number is too low or too high.
+                  This will help you get closer to the right answer. Pay
+                  attention to the hints and use your thinking skills to figure
+                  out the secret number. Are you ready to play and discover the
+                  amazing treasure hidden inside this deserted island? Let the
+                  adventure begin!
+                </p>
+              </div>
+              <button type="button" id="start" class="btn btn-success">
+                Launch Game
+              </button>
+              <audio autoplay controls class="audio" style="display: none">
+                <source src="media/game-audio.mp3" type="audio/ogg" />
+                <source src="media/game-audio.mp3" type="audio/mpeg" />
+                Your browser does not support the audio element.
+              </audio>
+              <!-- Modal -->
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <p>© Duygu Koksal - 2023</p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.js"
+      integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script async src="index.js"></script>
+  </body>
+</html>

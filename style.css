@@ -1,0 +1,226 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #000;
+  font-family: serif;
+  font-weight: 400;
+  background-image: url(images/pirate-island/29Z_2105.w026.n002.415B.p1.415.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 100vh;
+}
+.screen {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  background: linear-gradient(
+    to bottom,
+    rgb(209, 242, 252) 0%,
+    rgb(83, 203, 241) 100%
+  );
+  padding: 2rem;
+  text-align: center;
+  margin: 2rem auto;
+  border-radius: 15px;
+}
+
+figure .pirate {
+  position: absolute;
+  top: 0px;
+  left: -40px;
+}
+
+h1 {
+  animation: moveInLeft 2s;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 24px;
+  letter-spacing: 20px;
+  text-align: center;
+  padding: 1rem 0;
+  text-shadow: 2px 2px #0000;
+  color: #6937aa;
+}
+h2 {
+  animation: moveInRight 2s;
+  transition: all 0.5s;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 14px;
+  line-height: 24px;
+  text-align: center;
+  font-weight: 200;
+  color: #6937aa;
+}
+
+@keyframes moveInLeft {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  80% {
+    transform: translateX(-50px);
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.game-info p {
+  color: #6937aa;
+  font-weight: 300;
+  padding: 1rem;
+  font-size: 14px;
+  text-shadow: 5px 5px 10px gold;
+  line-height: 2;
+}
+
+#start,
+#submit {
+  display: block;
+  outline: none;
+  color: #fff;
+  border: none;
+  background-color: #6937aa;
+  transition: all 0.2s;
+  margin: 1rem auto;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 1);
+}
+#start:hover,
+#submit:hover {
+  transform: translateY(-2px) scale(1.1);
+  opacity: 1;
+}
+
+.form-label {
+  display: block;
+}
+
+select {
+  margin: 0.5rem;
+}
+.btn {
+  margin-top: 1rem;
+}
+
+.input-group {
+  padding: 1rem;
+  width: max-content;
+}
+
+.form-label {
+  font-size: 24px;
+  font-weight: 500;
+  color: #6937aa;
+  margin: 0;
+}
+
+.score-board-player {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  gap: 16px;
+  padding: 8px;
+  border-radius: 16px;
+  opacity: 0.5;
+}
+.score-board-player-active {
+  opacity: 1;
+}
+
+.score-board-player-labels {
+  display: flex;
+  flex-direction: column;
+}
+
+.score-board-player-labels span:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.score-board-player-labels span {
+  border-radius: 4px;
+  padding: 2px 8px;
+  width: max-content;
+  background-color: #746dcc;
+  color: white;
+  font-size: 14px;
+}
+
+.computer-thinking {
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  background: white;
+  border-radius: 16px;
+  margin: 2rem;
+}
+
+.btn-primary {
+  background-color: #6937aa !important;
+  border-color: #6937aa !important;
+  position: static !important;
+  color: #fff !important;
+}
+.btn-outline-primary {
+  background-color: #fff !important;
+  color: #6937aa !important;
+}
+
+.btn-check:checked + .btn {
+  background-color: #6937aa !important;
+  color: #fff !important;
+}
+
+.btn-outline-primary {
+  border-color: #6937aa !important;
+}
+
+.victory-text-container {
+  background-color: gold;
+  color: #000;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  letter-spacing: 1.4px;
+  text-align: left;
+}
+
+.btn-primary {
+  bottom: 10px;
+  right: 90px;
+}
+.btn-danger {
+  bottom: 10px;
+  right: 20px;
+}
+
+.footer {
+  background-color: transparent;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+}
